@@ -9,5 +9,8 @@ urlpatterns =[
 
     path("posts/<int:pk>/",views.PostRetrieveUpdateDestroyView.as_view()),
     path("posts/<int:pk>/add-like/",views.PostLikeView.as_view()),
+    path("posts/<int:pk>/add-comment/",views.PostCommentView.as_view()),
+
+    path("profile/change/",views.UserProfileView.as_view()),
 
 ]
